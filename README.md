@@ -1,4 +1,4 @@
-# Wei's Design Pattern Library
+# Design Pattern Library
 
 Reusable visual patterns harvested from real projects. Each pattern is
 documented, demonstrated by a runnable `example.html`, and ready to drop into
