@@ -29,6 +29,15 @@ in the table below to open the pattern in your browser.
 
 ## Adding a new pattern
 
+**The easiest way:** invoke the `add-design-pattern` skill in any Claude
+Code session. Say "add this to my design library" (or `/add-design-pattern`)
+and Claude walks through every step below, enforces the bouncer rule, fills
+the template from conversation context, commits, pushes, and confirms the
+live URL. The skill lives at `~/.claude/skills/add-design-pattern/SKILL.md`
+and is versioned in the `weiyan-design/claude-config` repo.
+
+**Manual steps** (what the skill automates):
+
 1. **Apply the bouncer rule.** Has this pattern been used in 2+ projects, or
    is it clearly general? If no, leave it in the project — don't extract yet.
 2. **Create a folder** named in kebab-case. Name describes *what* it is, not
@@ -40,9 +49,22 @@ in the table below to open the pattern in your browser.
    GitHub Pages once pushed.
 5. **Record `preview.mp4`** (or `preview.gif`) — 5–15 seconds showing the
    pattern in motion. For static patterns, a `preview.png` is fine.
-6. **Add a row to the table above.** Status starts at `experiment`; promote
-   to `production` after a second successful reuse. Include the live demo
-   URL in the table: `https://weiyan-design.github.io/design-patterns/<pattern-name>/example.html`
+6. **Add a row to the table above** with a `▶ live` demo link. Status
+   starts at `experiment`; promote to `production` after a second successful
+   reuse. Live URL format:
+   `https://weiyan-design.github.io/design-patterns/<pattern-name>/example.html`
+7. **Commit & push.** The repo is public with GitHub Pages enabled — the
+   live URL works the moment the commit hits `main` (~60s for first build).
+   No pattern is considered "added" until the live URL is confirmed.
+
+---
+
+## Repo + hosting
+
+- **Repo:** [weiyan-design/design-patterns](https://github.com/weiyan-design/design-patterns) (public)
+- **Local path:** `~/Documents/Vibe Code/_design-library/`
+- **Live demos:** [weiyan-design.github.io/design-patterns/](https://weiyan-design.github.io/design-patterns/) (GitHub Pages from `main` at root)
+- **Skill:** `add-design-pattern` (lives in `~/.claude/skills/`, versioned in `weiyan-design/claude-config`)
 
 ---
 
