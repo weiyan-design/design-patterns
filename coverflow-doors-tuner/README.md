@@ -8,6 +8,8 @@ used-in:
 tags: [layout, hero, carousel, svg, canvas, animation, scroll-driven, 3d, tuner]
 ---
 
+**▶ Live demo**: https://weiyan-design.github.io/design-patterns/coverflow-doors-tuner/example.html
+
 ## What it does
 A scroll-driven, perspective-tilted carousel of three "doors" — arch-shaped
 image cards with animated wavy bottom edges. The center door is dominant

@@ -8,6 +8,8 @@ used-in:
 tags: [texture, background, global, css-only, no-js]
 ---
 
+**▶ Live demo**: https://weiyan-design.github.io/design-patterns/grain-texture/example.html
+
 ## What it does
 A film-grain / letterpress noise overlay that sits above page content via
 `body::before`. Adds tactile, filmic warmth to the entire site without
